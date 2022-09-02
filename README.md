@@ -1,1 +1,3 @@
-# laboratorio-de-programacao
+# laboratório de programação
+
+- entrega das listas
