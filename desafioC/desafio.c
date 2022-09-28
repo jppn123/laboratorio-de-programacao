@@ -26,13 +26,10 @@ int main(){
                 
                 puts("armários: ");
                 bin(totarm);
-                
-                
+           
                 if(totarm == x){
                     puts("todos os armários estão ocupados!");
                 }
-                
-                
                 break;
             case 2:
                 pos = rand() % 8;
