@@ -7,7 +7,7 @@ int bin(int n);
 
 int main(){
     unsigned char x = 255;
-    int armario, pos, sel, narm, totarm = 0, aux, aux1;
+    int armario, pos, sel, narm, totarm = 0;
     srand(time(NULL));
 
     puts("selecione o número correspondente: ");
