@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int x, y, troca;
+    int x, y;
     int *p1 = &x, *p2 = &y;
 
     puts("digite o valor de x: ");
