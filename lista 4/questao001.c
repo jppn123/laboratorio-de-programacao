@@ -12,8 +12,8 @@ int main(){
     scanf("%d", &y);
     
     soma = somar(p1, p2);
-    printf("valor de x: %d\n", soma);
-    printf("endereço de x: %p\n", &soma);   
+    printf("valor da soma: %d\n", soma);
+    printf("endereço da soma: %p\n", &soma);   
 
     return 0;
 }
