@@ -20,4 +20,5 @@ int main(){
     }
     
     printf("o menor é: %d\n", *m);
+    return 0;
 }
