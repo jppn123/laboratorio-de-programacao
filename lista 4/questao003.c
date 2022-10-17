@@ -4,17 +4,17 @@ int main(){
     int x, aux = 0, min;
     int *p = &x, *m = &min;
     
-    while(x != 0){
+    while(*p != 0){
 
         puts("digite um valor para x(digite 0 para parar):");
         scanf("%d", p);
 
         if(aux == 0){
-            *m = x;
+            *m = *p;
             aux++;
         }
-        if(x < *m && x != 0){
-            *m = x;
+        if(*p < *m && *p != 0){
+            *m = *p;
         }
         
     }
