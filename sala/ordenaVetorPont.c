@@ -9,8 +9,10 @@ void print(int *, int);
 
 int main(int argc, char *argv[]){
     void (*pFunc[])()= {crescente, decrescente};
-    int n[tam];
+    int *n = NULL;
     srand(time(NULL));
+
+    n = malloc(tam * sizeof(int));
 
     for(int i = 0; i < tam; i++){
         *(n + i) = rand() % 10;
