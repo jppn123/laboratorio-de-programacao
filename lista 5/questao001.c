@@ -8,7 +8,11 @@ int main(int argc, char *argv[]){
     void (*pf[])() = {soma, multi};
     int val;
     int v1 , v2, op;
-
+    if(argc != 4){
+        printf("use:\t\n\t%s <num1> <num2> <operação>\n\n", argv[0]);
+        exit(1);
+    }
+        
     v1 = atoi(argv[1]);
     v2 = atoi(argv[2]);
     op = atoi(argv[3]) - 1;
