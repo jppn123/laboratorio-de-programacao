@@ -6,6 +6,7 @@
 
 void pr(int *, int );
 void prt(int *, int );
+void mat(int [tam][tam], int , int *, int *);
 
 int main(){
     int *v1, *v2, m[tam][tam];
@@ -21,23 +22,7 @@ int main(){
     puts("y: "); //linha
     prt(v2, tam);
 
-    for(int i = 0; i < tam; i++){
-        for(int x = 0; x < tam; x++){
-            m[i][x] = 0;
-        }
-    }
-    
-    for(int i = 0; i < tam; i++){
-        m[*(v2 + i)][*(v1 + i)] += 1;
-    }
-
-    puts("matriz: ");
-    for(int i = 0; i < tam; i++){
-        for(int x = 0; x < tam; x++){
-            printf("%d ", m[i][x]);
-        }
-        puts("");
-    }
+    mat(m, tam, v1, v2);
     
 }
 
@@ -51,4 +36,23 @@ void prt(int *v, int t){
         printf("%d ", *(v + i));
     }
     puts("");
+}
+void mat(int ma[tam][tam], int t, int *vet1, int *vet2){
+    for(int i = 0; i < t; i++){
+        for(int x = 0; x < t; x++){
+            ma[i][x] = 0;
+        }
+    }
+    
+    for(int i = 0; i < t; i++){
+        ma[*(vet2 + i)][*(vet1 + i)] += 1;
+    }
+
+    puts("matriz: ");
+    for(int i = 0; i < t; i++){
+        for(int x = 0; x < t; x++){
+            printf("%d ", ma[i][x]);
+        }
+        puts("");
+    }
 }
